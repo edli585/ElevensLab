@@ -7,7 +7,7 @@ public class Deck
 	
 	private ArrayList<Card> deck = new ArrayList<Card>();
 	
-	private Card[] used = {};
+	private ArrayList<Card> used = new ArrayList<Card>();
 	
 	public Deck(String[] rank, String[] suit, int[] val)
 	{
@@ -39,8 +39,10 @@ public class Deck
 	
 	public Card deal()
 	{
-		int num = (int)(Math.random() * 52);
-		used.add()
-		
+		int num = (int)(Math.random() * deck.size());
+		used.add(deck.get(num));
+		Card discarded = deck.get(num);
+		deck.remove(num);
+		return discarded;
 	}
 }
