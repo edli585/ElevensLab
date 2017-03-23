@@ -13,7 +13,7 @@ public class CardTester {
 		
 		Card test3 = new Card("king", "clovers", 13);
 		
-		System.out.print(test.toString());
+		System.out.println(test.toString());
 		
 		System.out.println(test.matches(test2));
 		
